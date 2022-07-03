@@ -93,5 +93,7 @@ df['weekend'] = np.where(df['day'].isins(['Sunday','Saturday'],1,0))
 
 
 #For time-series: split date and time to hours
+df['Dates'] = pd. to_datetime(df['date']). dt. date.
+df['Time'] = pd. to_datetime(df['date']). dt. time.
 
 #Manipulate from your mind
